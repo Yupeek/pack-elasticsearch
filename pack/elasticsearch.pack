@@ -1,0 +1,23 @@
+{
+    "name":"elasticsearch",
+    "description":"set of check of a elasticsearch",
+    "path":"index/",
+    "macros":{
+        "_ES_HOST": {"type":"string",
+            "description":"the hostname of the elasticsearch server"
+        },
+        "_ES_PORT": {"type":"integer",
+            "description": "port number of the elasticsearch service"
+        },
+        "_ES_EXTRA": {"type":"string",
+            "description": "the extra flags to add to command to allow authentication. --username --password --secure"
+        },
+		"_ES_WARNING": {"type": "string",
+        	"description": "the color of a node to be declared in Warning (yellow is warning in elasticsearch)"
+		},
+		"_ES_CRITICAL": {"type": "string",
+        	"description": "the color of a node to be declared in Critical state (red is critical in elasticsearch)"
+		},
+
+    }
+}
